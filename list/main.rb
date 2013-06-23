@@ -3,7 +3,9 @@
 
 require 'thinreports'
 
-report = ThinReports::Report.new :layout => 'basic_list.tlf'
+report = ThinReports::Report.new :layout => 'list/basic_list.tlf'
+
+report.start_new_page
 
 30.times do |t|
   # Internaly #start_new_page() method is called,
@@ -12,8 +14,8 @@ report = ThinReports::Report.new :layout => 'basic_list.tlf'
   # [CAUTION] thinreports < 0.7.5:
   #   report.page.list(:default).add_row do |row|
   #     :
-  report.list.add_row do |row|
-    row.item(:detail).value("row##{t}")
+  report.page.list(:basic_list).add_row do |row|
+    row.item(:default).value("row##{t}")
   end
 end
 
