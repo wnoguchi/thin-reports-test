@@ -1,7 +1,7 @@
 
-* Thinreportsテスト
+# Thinreportsテスト
 
-** これはなんですか？
+## これはなんですか？
 
 これはThinreportsのテストコードを配置するリポジトリです。
 

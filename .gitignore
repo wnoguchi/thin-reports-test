@@ -2,4 +2,5 @@
 *~
 /vendor/bundle
 *.pdf
+.DS_Store
 
